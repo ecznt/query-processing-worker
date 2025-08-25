@@ -1,0 +1,10 @@
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/WorkerDemoApplication.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/controller/TicketController.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/model/FinalResult.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/model/JobRequest.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/model/Ticket.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/repository/TicketRepository.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/service/CacheService.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/service/JobProcessingService.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/service/KafkaConsumerService.java
+/home/ecz/Desktop/Projects/worker-demo/src/main/java/dev/ecznt/worker_demo/service/MockOracleService.java
