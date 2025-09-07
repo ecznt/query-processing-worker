@@ -19,7 +19,7 @@ import java.util.UUID;
 @Slf4j
 public class TicketController {
 
-    private final KafkaTemplate<String, JobRequest> kafkaTemplate;
+    private final KafkaTemplate<String, String> kafkaTemplate;
 
     @Value("${app.kafka.topic.job-requests}")
     private String jobRequestsTopic;
@@ -34,7 +34,11 @@ public class TicketController {
 
         // This simulates the API Gateway/Ticket Service from the architecture diagram.
         // It receives a request, assigns a ticket ID, and publishes it to Kafka.
-        kafkaTemplate.send(jobRequestsTopic, request);
+        try {
+            kafkaTemplate.send(jobRequestsTopic, request.toString());
+        } catch (Exception exception) {
+            log.error(String.valueOf(exception));
+        }
 
         // It immediately returns the ticket ID to the client, making the API non-blocking.
         return ticketId;
